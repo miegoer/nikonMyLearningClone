@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const headerTextElements = document.querySelectorAll('.headerText');
   const customButtonElements = document.querySelectorAll('.custom-button');
   const cardElements = document.querySelectorAll('.card');
+  const videoBackground = document.querySelector('.background');
+  const videoPlaceholder = document.getElementById('aboutPlaceholder');
 
   headerTextElements.forEach((element) => {
     element.addEventListener('mouseover', () => {
@@ -34,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     card.addEventListener('mouseover', () => {
       card.style.setProperty('background-color', 'var(--nikon-yellow)');
+      card.style.transition = 'transform 0.3s ease';
       if (buttonInCard) {
         buttonInCard.style.setProperty('background-color', 'black', 'important');
         buttonInCard.style.setProperty('color', 'white', 'important');
@@ -54,6 +57,15 @@ document.addEventListener("DOMContentLoaded", () => {
         if (imgInButton) imgInButton.style.filter = 'none';
       }
     });
+  });
+
+  videoPlaceholder.addEventListener('mouseover', () => {
+    videoBackground.style.transform = 'translateX(60px)';
+    videoBackground.style.transition = 'transform 0.3s ease';
+  });
+  
+  videoPlaceholder.addEventListener('mouseout', () => {
+    videoBackground.style.transform = 'translateX(0px)';
   });
 });
 

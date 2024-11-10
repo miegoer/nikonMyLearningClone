@@ -161,3 +161,45 @@ describe("catalogue", () => {
     }
   });
 });
+
+describe("about", () => {
+  beforeAll(() => {
+    document.documentElement.innerHTML = html.toString();
+    const aboutPlaceholder = document.getElementById("aboutPlaceholder");
+    const aboutBackground = document.getElementById("aboutBackground");
+
+    aboutPlaceholder.addEventListener('mouseover', () => {
+      aboutBackground.style.transform = 'translateX(60px)';
+      aboutBackground.style.transition = 'transform 0.3s ease';
+    });
+
+    aboutPlaceholder.addEventListener('mouseout', () => {
+      aboutBackground.style.transform = '';
+      aboutBackground.style.transition = '';
+    });
+  });
+
+  test("about is present", () => {
+    expect(document.getElementById("about")).toBeTruthy();
+  });
+  
+  test("about placeholder image is present", () => {
+    expect(document.getElementById("aboutPlaceholder")).toBeTruthy();
+  });
+
+  test("about text is present", () => {
+    expect(document.getElementById("aboutText")).toBeTruthy();
+  });
+
+  test("about placeholder background shifts on mouseover", () => {
+    const aboutPlaceholder = document.getElementById("aboutPlaceholder");
+    const aboutBackground = document.getElementById("aboutBackground");
+    expect(aboutPlaceholder).toBeTruthy();
+
+    fireEvent.mouseOver(aboutPlaceholder);
+    expect(aboutBackground.style.transform).toBe('translateX(60px)');
+
+    fireEvent.mouseOut(aboutPlaceholder);
+    expect(aboutBackground.style.transform).toBe('');
+  });
+});
