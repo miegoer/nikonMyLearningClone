@@ -5,3 +5,23 @@
 .headerText {
   text-decoration: none;
 }
+
+.form-input {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid black;
+  outline: none;
+  box-shadow: none;
+}
+
+.form-input:focus {
+  box-shadow: none;
+}
+
+.custom-button {
+  border-radius: 0;
+  border: none;
+  background-color: var(--nikon-yellow);
+  color: black;
+  height: 50px;
+}
