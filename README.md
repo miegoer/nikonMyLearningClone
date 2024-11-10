@@ -26,5 +26,8 @@ Testing completed with Jest frameworks.
 ## Creation Process
 
 1. Used [Excalidraw](https://excalidraw.com/) to help visualize concept image as elements
-[screenshot of Excalidraw template](./README_assets/myLearningExcalidraw.PNG)
+![screenshot of Excalidraw template](./README_assets/myLearningExcalidraw.PNG)
 2. Create base project, with separate HTML, JS and CSS files. Custom CSS will still be necessary, even with Bootstrap as some pre-built elements need to be changed to closer match the concept.
+3. Using TDD implement the navbar. Key point of this process were:
+** Increased logo and font size for better accessibility.
+** Javascript implementation of changing nav bar links on hover.
