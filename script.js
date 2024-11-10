@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const headerTextElements = document.querySelectorAll('.headerText');
   const customButtonElements = document.querySelectorAll('.custom-button');
+  const cardElements = document.querySelectorAll('.card');
 
   headerTextElements.forEach((element) => {
     element.addEventListener('mouseover', () => {
@@ -25,6 +26,33 @@ document.addEventListener("DOMContentLoaded", () => {
       button.style.setProperty('background-color', 'var(--nikon-yellow)', 'important');
       button.style.setProperty('color', 'black', 'important');
       if (imgInButton) imgInButton.style.filter = 'none';
+    });
+  });
+
+  cardElements.forEach((card) => {
+    const buttonInCard = card.querySelector('.btn-view-courses');
+
+    card.addEventListener('mouseover', () => {
+      card.style.setProperty('background-color', 'var(--nikon-yellow)');
+      if (buttonInCard) {
+        buttonInCard.style.setProperty('background-color', 'black', 'important');
+        buttonInCard.style.setProperty('color', 'white', 'important');
+        
+        const imgInButton = buttonInCard.querySelector('img');
+        if (imgInButton) imgInButton.style.filter = 'invert(1)';
+      }
+    });
+
+    card.addEventListener('mouseout', () => {
+      card.style.setProperty('background-color', 'white');
+      if (buttonInCard) {
+        buttonInCard.style.setProperty('background-color', 'white', 'important');
+        buttonInCard.style.setProperty('color', 'black', 'important');
+
+        // Reset the image inside the button
+        const imgInButton = buttonInCard.querySelector('img');
+        if (imgInButton) imgInButton.style.filter = 'none';
+      }
     });
   });
 });
@@ -57,3 +85,4 @@ if (loginAlertTrigger) {
     }
   });
 }
+
