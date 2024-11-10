@@ -5,7 +5,6 @@ module.exports = async () => {
     testEnvironment: "jest-environment-jsdom",
     setupFilesAfterEnv: ['./jest.setup.js'],
 
-    // Add these lines to support CSS modules and CSS files
     moduleNameMapper: {
       '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
     },

@@ -50,3 +50,8 @@ Testing completed with Jest frameworks.
 * Centered text content to match the rest of the centered page.
 * Javascript implementation of the background shifting on mouseover of the video for better user interaction.
 * Went back to the course catalog cards and added the same smooth transform to the card background colour changes as the about background shift.
+
+7. Using TDD implement footer section. Key points of this process were:
+* Reuse custom-button class for the contact us button.
+* Use built-in Bootstrap success button for cookies settings.
+* Add gray background colour to login section.
