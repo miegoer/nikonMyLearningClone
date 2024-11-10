@@ -36,3 +36,8 @@ Testing completed with Jest frameworks.
 * Using inbuilt Bootstrap elements to create the form and applying custom CSS to match the concept image.
 * Javascript implementation of changing log in button style on hover.
 * Javascript implementation of a warning feature if both form inputs aren't filled in, using Bootstrap warnings.
+5. Using TDD implement course catalogue section. Key points of this process were:
+* Swapping out provided assets. The provided assets were too low quality. They were swapped out for similar looking SVG placeholders as these don't have the same scaling issues. In a real work environment I would have to go back to whoever provided the assets and ask that they give me either higher quality PNG's or SVG's (preferred especially in this case of icons).
+* Using Bootstrap's pre-made cards to contain the course options as they is an easy built-in solution to make sure they are spaced and sized correctly even as the screen size is changed.
+* Javascript implementation of changing cards and view courses buttons on hover.
+* Increased
