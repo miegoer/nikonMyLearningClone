@@ -45,3 +45,23 @@
   position: relative;
   z-index: 2; 
 }
+
+.skip-to-content {
+  position: sticky;
+  top: 10px;
+  left: 10px;
+  padding: 8px 16px;
+  background-color: var(--nikon-yellow);
+  color: black;
+  font-weight: bold;
+  z-index: 1030;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.skip-to-content:focus {
+  opacity: 1;
+  pointer-events: auto;
+}

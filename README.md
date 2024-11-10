@@ -55,3 +55,9 @@ Testing completed with Jest frameworks.
 * Reuse custom-button class for the contact us button.
 * Use built-in Bootstrap success button for cookies settings.
 * Add gray background colour to login section.
+
+8. Run page through a [accessibility checker](https://chromewebstore.google.com/detail/siteimprove-accessibility/djcglbmbegflehmbfleechkjhmedcopn) to make sure it meets modern statndards
+* Update heading elements to have a specific structure
+* Update the first headings to be h1
+* Update cookies button colours to a green that meets the 7:1 contrast standard
+* Add hidden skip to main content button for keyboard users
