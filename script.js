@@ -4,6 +4,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const cardElements = document.querySelectorAll('.card');
   const videoBackground = document.querySelector('.background');
   const videoPlaceholder = document.getElementById('aboutPlaceholder');
+  const underlineElements = [
+    document.getElementById('contactUsLink'), 
+    document.getElementById('lostPasswordLink'), 
+    document.getElementById('dataProtectionLink'), 
+    document.getElementById('policiesLink')
+  ];
+  
+  for (const element of underlineElements) {
+    element.addEventListener('mouseover', function() {
+      element.style.textDecoration = 'underline';
+    });
+    element.addEventListener('mouseout', function() {
+      element.style.textDecoration = 'none';
+    });
+  }
 
   headerTextElements.forEach((element) => {
     element.addEventListener('mouseover', () => {
@@ -67,6 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
   videoPlaceholder.addEventListener('mouseout', () => {
     videoBackground.style.transform = 'translateX(0px)';
   });
+
 });
 
 const loginAlertPlaceholder = document.getElementById('loginErrorPlaceholder');

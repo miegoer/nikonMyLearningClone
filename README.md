@@ -2,17 +2,17 @@
 
 A cloned version of the Nikon MyLearning platforms landing page using Bootstrap, Javascript and some custom CSS as needed.
 <br />
-Testing completed with Jest frameworks.
+Testing completed with Jest framework.
 
 ## Getting Started
 
 ### Installation
 
-* Install NPM packages
+* Open index.html to view page
+* to run tests install NPM packages
    ```sh
    npm install
    ```
-* Open index.html to view page
 * Run testing using
   ```sh
   npm test
@@ -56,7 +56,7 @@ Testing completed with Jest frameworks.
 * Use built-in Bootstrap success button for cookies settings.
 * Add gray background colour to login section.
 
-8. Run page through a [accessibility checker](https://chromewebstore.google.com/detail/siteimprove-accessibility/djcglbmbegflehmbfleechkjhmedcopn) to make sure it meets modern statndards
+8. Run page through an [accessibility checker](https://chromewebstore.google.com/detail/siteimprove-accessibility/djcglbmbegflehmbfleechkjhmedcopn) to make sure it meets modern statndards
 * Update heading elements to have a specific structure
 * Update the first headings to be h1
 * Update cookies button colours to a green that meets the 7:1 contrast standard
