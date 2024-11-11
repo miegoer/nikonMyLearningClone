@@ -41,7 +41,7 @@ Testing completed with Jest framework.
 * Javascript implementation of a warning feature if both form inputs aren't filled in, using Bootstrap warnings.
 
 5. Using TDD implement course catalogue section. Key points of this process were:
-* Swapping out provided assets. The provided assets were too low quality. They were swapped out for similar looking SVG placeholders as these don't have the same scaling issues. In a real work environment I would have to go back to whoever provided the assets and ask that they give me either higher quality PNG's or SVG's (preferred especially in this case of icons).
+* Swapping out provided assets. The provided assets were too low quality. They were swapped out for similar looking SVG placeholders as these don't have the same scaling issues. In a real work environment I would have to go back to whoever provided the assets and ask that they give me either higher quality PNG's or SVG's (preferred especially in this case of icons) as the placeholder assets are also different to the hero image banner icons.
 * Using Bootstrap's pre-made cards to contain the course options as they is an easy built-in solution to make sure they are spaced and sized correctly even as the screen size is changed.
 * Javascript implementation of changing cards and view courses buttons on hover.
 * Increased text and icon size for better accessibility.
@@ -53,6 +53,7 @@ Testing completed with Jest framework.
 
 7. Using TDD implement footer section. Key points of this process were:
 * Reuse custom-button class for the contact us button.
+* Add a missing phone receiver SVG to be included in the button. If there were any missing assets in a real project this would have to be brought up while a temporary asset could be used.
 * Use built-in Bootstrap success button for cookies settings.
 * Add gray background colour to login section.
 
